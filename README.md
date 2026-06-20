@@ -15,7 +15,25 @@ ParkIntel uses 298,000+ real ASTraM violation records to tell enforcement comman
 
 ## Dashboard Preview
 
-> Screenshots: *(add after recording — use Cmd+Shift+4 on Mac)*
+![Dashboard Header](screenshots/07_header.png)
+
+### Where to Patrol
+![Where to Patrol](screenshots/01_where_to_patrol.png)
+
+### Map View
+![Map View](screenshots/02_map_view.png)
+
+### Repeat Offenders
+![Repeat Offenders](screenshots/03_repeat_offenders.png)
+
+### All Zones
+![All Zones](screenshots/04_all_zones.png)
+
+### Patrol Planner
+![Patrol Planner](screenshots/05_patrol_planner.png)
+
+### Enforcement Recommendations
+![Enforcement Recommendations](screenshots/06_enforcement_recommendations.png)
 
 | Tab | Description |
 |-----|-------------|
