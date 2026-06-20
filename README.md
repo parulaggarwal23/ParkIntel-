@@ -50,7 +50,7 @@ ParkIntel uses 298,000+ real ASTraM violation records to tell enforcement comman
 
 The raw dataset (104 MB) exceeds GitHub's file size limit and is hosted separately.
 
-**Download:** [ASTraM Violation Records — Google Drive](https://drive.google.com/your-link-here)
+**Download:** [ASTraM Violation Records — Google Drive](https://drive.google.com/drive/folders/1b_mNkSGSLRn79pzRD1MDF4lCxEz3RvKx?usp=share_link)
 
 Place the downloaded CSV in:
 ```
