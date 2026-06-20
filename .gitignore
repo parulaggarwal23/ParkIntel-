@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+data/processed/
+*.pkl
+dashboard/app.py.backup
+dashboard/app.py.backup2
