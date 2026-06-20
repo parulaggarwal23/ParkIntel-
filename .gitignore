@@ -6,3 +6,4 @@ data/processed/
 *.pkl
 dashboard/app.py.backup
 dashboard/app.py.backup2
+dataset/*.csv
