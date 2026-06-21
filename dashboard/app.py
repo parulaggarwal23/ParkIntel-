@@ -15,6 +15,13 @@ from patrol_allocation import render_patrol_plan, get_patrol_css  # [PATROL_ALLO
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../.env"))
 MAPPLS_KEY = os.getenv("MAPPLS_API_KEY", "")
+# Also check Streamlit secrets (for cloud deployment)
+try:
+    import streamlit as _st
+    if "MAPPLS_API_KEY" in _st.secrets:
+        MAPPLS_KEY = _st.secrets["MAPPLS_API_KEY"]
+except Exception:
+    pass
 DATA_DIR = os.path.join(os.path.dirname(__file__), "../data/processed")
 
 st.set_page_config(
@@ -234,7 +241,7 @@ st.markdown(get_patrol_css(), unsafe_allow_html=True)  # [PATROL_ALLOCATION] —
 def load_all():
     ranked_path   = os.path.join(DATA_DIR, "ranked_zones.pkl")
     temporal_path = os.path.join(DATA_DIR, "temporal_data.pkl")
-    cluster_path  = os.path.join(DATA_DIR, "processed_data_clustered.pkl")
+    cluster_path  = os.path.join(DATA_DIR, "processed_data_clustered_slim.pkl")
     missing = [p for p in [ranked_path, temporal_path, cluster_path] if not os.path.exists(p)]
     if missing:
         return None, None, None

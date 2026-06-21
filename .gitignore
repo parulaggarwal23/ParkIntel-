@@ -2,8 +2,9 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/processed/
-*.pkl
+data/processed/processed_data.pkl
+data/processed/processed_data_clustered.pkl
 dashboard/app.py.backup
 dashboard/app.py.backup2
 dataset/*.csv
+.streamlit/secrets.toml
